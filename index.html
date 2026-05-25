@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.I.M. Ruhan — Portfolio</title>
+ 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=Space+Mono&display=swap" rel="stylesheet">
+ 
+    <!-- Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+ 
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+ 
+    <!-- Typed.js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+ 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <!-- Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+ 
+    <!-- Noise overlay -->
+    <div class="noise"></div>
+ 
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <a href="#home" class="logo">
+            <span class="logo-bracket">[</span>SIM<span class="logo-dot">.</span>Ruhan<span class="logo-bracket">]</span>
+        </a>
+ 
+        <button class="menu-btn" id="menu-icon" aria-label="Toggle Menu">
+            <span></span><span></span><span></span>
+        </button>
+ 
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="nav-link active" data-text="Home">Home</a>
+            <a href="#about" class="nav-link" data-text="About">About</a>
+            <a href="#services" class="nav-link" data-text="Services">Services</a>
+            <a href="#projects" class="nav-link" data-text="Projects">Projects</a>
+            <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
+        </nav>
+    </header>
+ 
+    <!-- HOME -->
+    <section id="home" class="home">
+        <div class="home-bg-text">RUHAN</div>
+ 
+        <div class="home-content" data-gsap="fade-up">
+            <p class="home-tag"><span class="tag-line"></span>Available for work</p>
+            <h3 class="home-greeting">Hello, I'm</h3>
+            <h1 class="home-name">S.I.M. <em>Ruhan</em></h1>
+            <h3 class="home-role">
+                <span class="role-prefix">— </span><span class="multiple-text"></span>
+            </h3>
+            <p class="home-desc">
+                Passionate Frontend Developer &amp; CSE undergraduate at North South University.
+                I craft modern, responsive web experiences using React, Next.js, Node.js,
+                Express.js and MongoDB.
+            </p>
+ 
+            <div class="home-actions">
+                <a href="#" class="btn btn-primary">
+                    <i class="bx bxs-download"></i> Download CV
+                </a>
+                <a href="#projects" class="btn btn-ghost">View Work</a>
+            </div>
+ 
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/sim-ruhan/" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/SIM-Ruhan" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+                <a href="https://www.facebook.com/share/1AKkdxe5z5/" target="_blank" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/sim_rihan_mahmud?igsh=MWtuZGJ5NXk1cTQzeQ==" target="_blank" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+            </div>
+        </div>
+ 
+        <div class="home-img" data-gsap="fade-left">
+            <div class="img-ring ring-1"></div>
+            <div class="img-ring ring-2"></div>
+            <div class="img-frame">
+                <img src="./Screenshot 2026-05-16 at 3.54.05 AM.png" alt="S.I.M. Ruhan">
+            </div>
+            <div class="img-badge">
+                <span class="badge-num">2+</span>
+                <span class="badge-text">Years<br>Coding</span>
+            </div>
+        </div>
+ 
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+ 
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <div class="about-img" data-gsap="fade-right">
+            <div class="about-img-wrap">
+                <img src="./Screenshot 2026-05-16 at 3.52.47 AM.png" alt="About S.I.M. Ruhan">
+                <div class="about-img-accent"></div>
+            </div>
+            <div class="about-stats">
+                <div class="stat"><span class="stat-num" data-count="15">0</span><span class="stat-label">Projects</span></div>
+                <div class="stat"><span class="stat-num" data-count="8">0</span><span class="stat-label">Technologies</span></div>
+                <div class="stat"><span class="stat-num" data-count="2">0</span><span class="stat-label">Years Exp</span></div>
+            </div>
+        </div>
+ 
+        <div class="about-content" data-gsap="fade-left">
+            <p class="section-tag">Who I Am</p>
+            <h2 class="section-heading">About <em>Me</em></h2>
+            <h3 class="about-role">MERN Stack Developer</h3>
+            <p class="about-desc">
+                I'm currently pursuing a BSc in Computer Science and Engineering at
+                <strong>North South University</strong>. I enjoy creating clean and interactive
+                websites with modern technologies. My goal is to become a skilled full-stack
+                developer and build impactful digital experiences that solve real problems.
+            </p>
+ 
+            <div class="skills-tags">
+                <span>React</span><span>Next.js</span><span>Node.js</span>
+                <span>Express.js</span><span>MongoDB</span><span>JavaScript</span>
+                <span>HTML/CSS</span><span>Tailwind</span>
+            </div>
+ 
+            <a href="./Readmore.html" class="btn btn-primary">Read More <i class="bx bx-arrow-back bx-rotate-180"></i></a>
+        </div>
+    </section>
+ 
+    <!-- SERVICES -->
+    <section id="services" class="services">
+        <div class="section-header" data-gsap="fade-up">
+            <p class="section-tag">What I Do</p>
+            <h2 class="section-heading">My <em>Services</em></h2>
+        </div>
+ 
+        <div class="services-grid">
+            <div class="service-card" data-gsap="stagger">
+                <div class="service-number">01</div>
+                <div class="service-icon"><i class="bx bx-code-alt"></i></div>
+                <h3>Web Development</h3>
+                <p>I build responsive, modern web applications using HTML, CSS, JavaScript, React, Next.js, Express.js and MongoDB — focusing on performance, security, and smooth cross-device experiences.</p>
+                <div class="service-hover-line"></div>
+            </div>
+ 
+            <div class="service-card" data-gsap="stagger">
+                <div class="service-number">02</div>
+                <div class="service-icon"><i class="bx bx-palette"></i></div>
+                <h3>UI/UX Design</h3>
+                <p>I design clean, attractive interfaces that improve usability and engagement — with careful attention to layout, typography, spacing, color balance, and responsive design across all platforms.</p>
+                <div class="service-hover-line"></div>
+            </div>
+ 
+            <div class="service-card" data-gsap="stagger">
+                <div class="service-number">03</div>
+                <div class="service-icon"><i class="bx bx-layer"></i></div>
+                <h3>Full Stack Development</h3>
+                <p>From dynamic frontends to robust backends, APIs, databases, and authentication — I provide end-to-end web solutions that are efficient, scalable, and maintainable.</p>
+                <div class="service-hover-line"></div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+        <div class="section-header" data-gsap="fade-up">
+            <p class="section-tag">What I've Built</p>
+            <h2 class="section-heading">My <em>Projects</em></h2>
+        </div>
+ 
+        <div class="projects-grid">
+ 
+            <article class="project-card" data-gsap="stagger">
+                <div class="project-img-wrap">
+                    <img src="./Project-Image/MediQueue.png" alt="MediQueue">
+                    <div class="project-overlay">
+                        <a href="https://medi-queue-tutor-client.vercel.app" target="_blank" class="project-link"><i class="bx bx-link-external"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <span class="project-tag">React · Node.js · MongoDB</span>
+                    <h3>MediQueue — Tutor Booking</h3>
+                    <p>A dedicated tutor booking platform bridging students and tutors, streamlining scheduling, preventing time conflicts and organizing study sessions efficiently.</p>
+                    <a href="https://medi-queue-tutor-client.vercel.app" target="_blank" class="project-cta">View Project <i class="bx bx-arrow-back bx-rotate-180"></i></a>
+                </div>
+            </article>
+ 
+            <article class="project-card" data-gsap="stagger">
+                <div class="project-img-wrap">
+                    <img src="./Project-Image/Qurbani-hut.png" alt="QurbaniHat">
+                    <div class="project-overlay">
+                        <a href="https://qurbani-hat-assignment-08-a25g.vercel.app" target="_blank" class="project-link"><i class="bx bx-link-external"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <span class="project-tag">Next.js · Authentication</span>
+                    <h3>Livestock Booking Platform</h3>
+                    <p>A modern livestock marketplace where users can explore and book animals for Qurbani, featuring detailed listings, authentication, and responsive UI design.</p>
+                    <a href="https://qurbani-hat-assignment-08-a25g.vercel.app" target="_blank" class="project-cta">View Project <i class="bx bx-arrow-back bx-rotate-180"></i></a>
+                </div>
+            </article>
+ 
+            <article class="project-card" data-gsap="stagger">
+                <div class="project-img-wrap">
+                    <img src="./Project-Image/KeenKeeper.png" alt="KeenKeeper">
+                    <div class="project-overlay">
+                        <a href="https://calm-ganache-9d61e4.netlify.app" target="_blank" class="project-link"><i class="bx bx-link-external"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <span class="project-tag">React · JSON · DOM</span>
+                    <h3>KeenKeeper — Friend Manager</h3>
+                    <p>A friend list management app that helps users track personal connections, identify overdue contacts, and visualize interaction patterns with a clean responsive interface.</p>
+                    <a href="https://calm-ganache-9d61e4.netlify.app" target="_blank" class="project-cta">View Project <i class="bx bx-arrow-back bx-rotate-180"></i></a>
+                </div>
+            </article>
+ 
+            <article class="project-card" data-gsap="stagger">
+                <div class="project-img-wrap">
+                    <img src="./Project-Image/Digitools.png" alt="DigiTools">
+                    <div class="project-overlay">
+                        <a href="#" class="project-link"><i class="bx bx-link-external"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <span class="project-tag">React · State Management</span>
+                    <h3>DigiTools — AI Model Hub</h3>
+                    <p>A digital marketplace providing access to premium AI-powered tools, templates and productivity resources — featuring a cart system and interactive user experience.</p>
+                    <a href="#" class="project-cta">View Project <i class="bx bx-arrow-back bx-rotate-180"></i></a>
+                </div>
+            </article>
+ 
+            <article class="project-card" data-gsap="stagger">
+                <div class="project-img-wrap">
+                    <img src="./Project-Image/PayooMobile.png" alt="Payoo">
+                    <div class="project-overlay">
+                        <a href="https://sim-ruhan.github.io/Payoo-web/" target="_blank" class="project-link"><i class="bx bx-link-external"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <span class="project-tag">JavaScript · DOM</span>
+                    <h3>Mobile Banking Web App</h3>
+                    <p>A full-featured banking interface with add money, cash out, bill payment, transfers, bonus rewards, and complete transaction history tracking.</p>
+                    <a href="https://sim-ruhan.github.io/Payoo-web/" target="_blank" class="project-cta">View Project <i class="bx bx-arrow-back bx-rotate-180"></i></a>
+                </div>
+            </article>
+ 
+            <article class="project-card" data-gsap="stagger">
+                <div class="project-img-wrap">
+                    <img src="./Project-Image/githubIssueTracker.png" alt="GitHub Issues Tracker">
+                    <div class="project-overlay">
+                        <a href="https://sim-ruhan.github.io/Assignment05/" target="_blank" class="project-link"><i class="bx bx-link-external"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <span class="project-tag">HTML · Tailwind · JavaScript · API</span>
+                    <h3>GitHub Issues Tracker</h3>
+                    <p>A dynamic issues tracker fetching data from GitHub's API with login auth, issue filtering, real-time search, and modal-based detail views.</p>
+                    <a href="https://sim-ruhan.github.io/Assignment05/" target="_blank" class="project-cta">View Project <i class="bx bx-arrow-back bx-rotate-180"></i></a>
+                </div>
+            </article>
+ 
+        </div>
+    </section>
+ 
+    <!-- CONTACT -->
+       <!-- 8567eddd-f1ee-413e-89c1-b3829ab43b09 -->
+    <section id="contact" class="contact">
+        <div class="section-header" data-gsap="fade-up">
+            <p class="section-tag">Get In Touch</p>
+            <h2 class="section-heading">Contact <em>Me</em></h2>
+        </div>
+ 
+        <div class="contact-wrapper">
+            <div class="contact-info" data-gsap="fade-right">
+                <h3>Let's Work Together</h3>
+                <p>Feel free to reach out for web development projects, collaborations, freelance work, or any creative ideas. I'll get back to you as soon as possible.</p>
+ 
+                <div class="info-item">
+                    <div class="info-icon"><i class="bx bx-envelope"></i></div>
+                    <div><span class="info-label">Email</span><span class="info-val">simruhan22@gmail.com</span></div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon"><i class="bx bx-phone"></i></div>
+                    <div><span class="info-label">Phone</span><span class="info-val">+8801881090679</span></div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon"><i class="bx bx-map"></i></div>
+                    <div><span class="info-label">Location</span><span class="info-val">Dhaka, Bangladesh</span></div>
+                </div>
+ 
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/sim-ruhan/" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                    <a href="https://github.com/SIM-Ruhan" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+                    <a href="https://www.facebook.com/share/1AKkdxe5z5/" target="_blank" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+                    <a href="https://www.instagram.com/sim_rihan_mahmud?igsh=MWtuZGJ5NXk1cTQzeQ==" target="_blank" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+                </div>
+            </div>
+ 
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" data-gsap="fade-left">
+                <input type="hidden" name="access_key" value="8567eddd-f1ee-413e-89c1-b3829ab43b09">
+ 
+                <div class="form-row">
+                    <div class="form-field">
+                        <input type="text" name="name" placeholder=" " required id="fname">
+                        <label for="fname">Full Name</label>
+                    </div>
+                    <div class="form-field">
+                        <input type="email" name="email" placeholder=" " required id="femail">
+                        <label for="femail">Email Address</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-field">
+                        <input type="text" name="phone" placeholder=" " id="fphone">
+                        <label for="fphone">Phone Number</label>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" name="subject" placeholder=" " id="fsubject">
+                        <label for="fsubject">Subject</label>
+                    </div>
+                </div>
+                <div class="form-field form-field--textarea">
+                    <textarea name="message" placeholder=" " required id="fmessage" rows="5"></textarea>
+                    <label for="fmessage">Your Message</label>
+                </div>
+ 
+                <button type="submit" class="btn btn-primary btn-full">
+                    <span>Send Message</span>
+                    <i class="bx bx-send"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+ 
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <a href="#home" class="footer-logo">S.I.M. Ruhan</a>
+            <p class="footer-copy">© 2026 S.I.M. Ruhan — All Rights Reserved</p>
+            <a href="#home" class="back-top" aria-label="Back to top">
+                <i class="bx bx-up-arrow-alt"></i>
+            </a>
+        </div>
+    </footer>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
