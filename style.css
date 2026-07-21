@@ -810,9 +810,13 @@ section {
     margin-bottom: 0.3rem;
 }
 .info-val {
-    display: block;
-    font-size: 1.5rem;
-    color: var(--text);
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.info-val:hover {
+    color: var(--teal); /* Change to match your theme */
 }
 .contact-info .social-media { margin-top: 4rem; }
 
@@ -913,6 +917,7 @@ section {
     color: var(--teal);
     transform: translateY(-4px);
 }
+
 
 /* ============================================
    RESPONSIVE

@@ -144,7 +144,6 @@ function runHeroTimeline() {
         .from('.home-desc',      { opacity: 0, y: 20, duration: 0.55 }, 0.62)
         .from('.home-actions',   { opacity: 0, y: 18, duration: 0.5  }, 0.72)
         .from('.social-media a', {
-            opacity: 0, y: 16,
             stagger: 0.07, duration: 0.45
         }, 0.8)
         // Image: slide in from right ONLY — opacity stays at 1

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S.I.M. Ruhan — Portfolio</title>
- <!-- https://loquacious-quokka-b1b627.netlify.app/#services -->
+ <!-- https://loquacious-quokka-b1b627.netlify.app -->
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +26,7 @@
  
     <!-- Cursor -->
     <div class="cursor" id="cursor"></div>
-
+<div class="cursor-follower" id="cursorFollower" style="left: 528px; top: 439px; width: 36px; height: 36px; opacity: 0.5;"></div>
  
     <!-- Noise overlay -->
     <div class="noise"></div>
@@ -180,13 +180,29 @@
  
             <article class="project-card" data-gsap="stagger">
                 <div class="project-img-wrap">
+                    <img src="./Project-Image/recipehub.png" alt="recipehub">
+                    <div class="project-overlay">
+                        <a href="https://recipe-hub-client-psi.vercel.app" target="_blank" class="project-link"><i class="bx bx-link-external"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <span class="project-tag">React · Next.js · Authentication · Express.js · Node.js · MongoDB</span>
+                    <h3>RecipeHub — Recipe Sharing Platform</h3>
+                    <p>RecipeHub is a platform where food enthusiasts can create, share, discover, and manage recipes.
+Users can publish their own recipes, browse recipes shared by others, save favorite recipes, and interact with the community.
+</p>
+                    <a href="https://recipe-hub-client-psi.vercel.app" target="_blank" class="project-cta">View Project <i class="bx bx-arrow-back bx-rotate-180"></i></a>
+                </div>
+            </article>
+            <article class="project-card" data-gsap="stagger">
+                <div class="project-img-wrap">
                     <img src="./Project-Image/MyBank.png" alt="MediQueue">
                     <div class="project-overlay">
                         <a href="https://my-bank-web.vercel.app" target="_blank" class="project-link"><i class="bx bx-link-external"></i></a>
                     </div>
                 </div>
                 <div class="project-body">
-                    <span class="project-tag">React · Noext.js · MongoDB(will be added soon)</span>
+                    <span class="project-tag">React · Next.js · MongoDB(will be added soon)</span>
                     <h3>MyBank-Bank Management App</h3>
                     <p>BankFlow is a Next.js-based banking aggregator that allows users to manage multiple bank accounts through a single, secure dashboard. It features a full authentication system, real-time updates for transactions, and various banking functionalities like transfers, bill payments, and tax calculations.</p>
                     <a href="https://my-bank-web.vercel.app" target="_blank" class="project-cta">View Project <i class="bx bx-arrow-back bx-rotate-180"></i></a>
@@ -207,6 +223,22 @@
                     <a href="https://qurbani-hat-assignment-08-a25g.vercel.app" target="_blank" class="project-cta">View Project <i class="bx bx-arrow-back bx-rotate-180"></i></a>
                 </div>
             </article>
+
+             <article class="project-card" data-gsap="stagger">
+                <div class="project-img-wrap">
+                    <img src="./Project-Image/githubIssueTracker.png" alt="GitHub Issues Tracker">
+                    <div class="project-overlay">
+                        <a href="https://medi-queue-tutor-client.vercel.app" target="_blank" class="project-link"><i class="bx bx-link-external"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <span class="project-tag">React · Next.js · Authentication · Node.js · Express.js · MongoDB</span>
+                    <h3>MediQueue — Tutor Booking Platform</h3>
+                    <p>A tutor booking web application designed to connect students with tutors efficiently through automated scheduling and session management.</p>
+                    <a href="https://medi-queue-tutor-client.vercel.app" target="_blank" class="project-cta">View Project <i class="bx bx-arrow-back bx-rotate-180"></i></a>
+                </div>
+            </article>
+ 
  
             <article class="project-card" data-gsap="stagger">
                 <div class="project-img-wrap">
@@ -222,7 +254,7 @@
                     <a href="https://calm-ganache-9d61e4.netlify.app" target="_blank" class="project-cta">View Project <i class="bx bx-arrow-back bx-rotate-180"></i></a>
                 </div>
             </article>
- 
+
             <article class="project-card" data-gsap="stagger">
                 <div class="project-img-wrap">
                     <img src="./Project-Image/Digitools.png" alt="DigiTools">
@@ -248,7 +280,9 @@
                 <div class="project-body">
                     <span class="project-tag">JavaScript · DOM</span>
                     <h3>Mobile Banking Web App</h3>
-                    <p>A full-featured banking interface with add money, cash out, bill payment, transfers, bonus rewards, and complete transaction history tracking.</p>
+                    <p>A full-featured banking interface with add money, cash out, bill payment, transfers, bonus rewards, and complete transaction history tracking. <br> 
+                    Number: 01881090679 and Password: 1234
+                    </p>
                     <a href="https://sim-ruhan.github.io/Payoo-web/" target="_blank" class="project-cta">View Project <i class="bx bx-arrow-back bx-rotate-180"></i></a>
                 </div>
             </article>
@@ -267,6 +301,7 @@
                     <a href="https://sim-ruhan.github.io/Assignment05/" target="_blank" class="project-cta">View Project <i class="bx bx-arrow-back bx-rotate-180"></i></a>
                 </div>
             </article>
+            
  
         </div>
     </section>
@@ -286,23 +321,28 @@
  
                 <div class="info-item">
                     <div class="info-icon"><i class="bx bx-envelope"></i></div>
-                    <div><span class="info-label">Email</span><span class="info-val">simruhan22@gmail.com</span></div>
+                    <div>
+    <span class="info-label">Email</span>
+    <a href="mailto:simruhan@gmail.com" class="info-val">
+        simruhan22@gmail.com
+    </a>
+</div>
                 </div>
                 <div class="info-item">
                     <div class="info-icon"><i class="bx bx-phone"></i></div>
-                    <div><span class="info-label">Phone</span><span class="info-val">+8801881090679</span></div>
+                    <div>
+    <span class="info-label">Phone</span>
+    <a href="tel:+8801881090679" class="info-val">
+        +8801881090679
+    </a>
+</div>
                 </div>
                 <div class="info-item">
                     <div class="info-icon"><i class="bx bx-map"></i></div>
                     <div><span class="info-label">Location</span><span class="info-val">Dhaka, Bangladesh</span></div>
                 </div>
  
-                <div class="social-media">
-                    <a href="https://www.linkedin.com/in/sim-ruhan/" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
-                    <a href="https://github.com/SIM-Ruhan" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
-                    <a href="https://www.facebook.com/share/1AKkdxe5z5/" target="_blank" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
-                    <a href="https://www.instagram.com/sim_rihan_mahmud?igsh=MWtuZGJ5NXk1cTQzeQ==" target="_blank" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
-                </div>
+              
             </div>
  
             <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" data-gsap="fade-left">
@@ -345,11 +385,29 @@
     <footer class="footer">
         <div class="footer-inner">
             <a href="#home" class="footer-logo">S.I.M. Ruhan</a>
-            <p class="footer-copy">© 2026 S.I.M. Ruhan — All Rights Reserved</p>
+            <div class="social-media">
+    <a href="https://www.linkedin.com/in/sim-ruhan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <i class="bx bxl-linkedin"></i>
+    </a>
+
+    <a href="https://github.com/SIM-Ruhan" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <i class="bx bxl-github"></i>
+    </a>
+
+    <a href="https://www.facebook.com/share/1AKkdxe5z5/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <i class="bx bxl-facebook"></i>
+    </a>
+
+    <a href="https://wa.me/8801881090679" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <i class="bx bxl-whatsapp"></i>
+    </a>
+</div>
             <a href="#home" class="back-top" aria-label="Back to top">
                 <i class="bx bx-up-arrow-alt"></i>
             </a>
+            
         </div>
+        <p class="footer-copy">© 2026 S.I.M. Ruhan — All Rights Reserved</p>
     </footer>
  
     <script src="script.js"></script>
